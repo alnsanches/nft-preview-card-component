@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --p-blue: hsl(215, 51%, 70%);
+    --p-cyan: hsl(178, 100%, 50%);
+    --p-purple: hsl(321, 100%, 50%);
+    --n-bg: hsl(217, 54%, 11%);
+    --n-card: hsl(216, 50%, 16%);
+    --n-line: hsl(215, 29%, 35%);
+    --n-white: hsl(0, 0%, 100%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    background: var(--n-bg);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    margin-top: 26px;
+    border-radius: 15px;
+    transition: ease-in-out .8s;
+    transform: scale(1);
+    -webkit-animation: slideIn 1s ease;
+    animation: slideIn 1.5s ease;
+    margin-top: 50px;
+
+}
+
+.card {
+    border-radius: 25px;
+    background-color: var(--n-card);
+    max-width: 300px;
+    padding: 25px;
+    font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+h1 {
+    color: var(--n-white);
+    font-size: 18px;
+}
+
+img {
+    width: 300px;
+    border-radius: 15px;
+    display: block;
+}
+
+hr {
+    border: 1px solid var(--n-line);
+}
+
+.paragraph {
+    color: var(--p-blue);
+    margin-left: 6px;
+}
+
+.eth {
+    color: var(--p-cyan);
+    font-weight: 700;
+    display: inline-flex;
+    margin-left: 6px;
+    align-items: center;
+    justify-content: center;
+}
+
+.price svg {
+    transition: transform .2s;
+}
+
+.price svg:hover {
+    animation: rotate 2s;
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.clock {
+    display: inline-flex;
+    margin-left: 6px;
+    align-items: center;
+    justify-content: center;
+}
+
+.equilibrium {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4px;
+}
+
+.creator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.avatar {
+    display: flex;
+    justify-content: space-between;
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+    border: 1px solid var(--n-white);
+    border-radius: 50px;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin-right: 8px;
+}
+
+span {
+    color: var(--n-white);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* animação do icon do preço */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
