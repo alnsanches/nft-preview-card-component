@@ -30,7 +30,7 @@ body {
     transform: scale(1);
     -webkit-animation: slideIn 1s ease;
     animation: slideIn 1.5s ease;
-    margin-top: 50px;
+    margin-top: 25px;
 
 }
 
