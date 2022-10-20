@@ -19,9 +19,9 @@ body {
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 340px;
     align-items: center;
     padding: 25px;
     margin-top: 26px;
@@ -49,9 +49,10 @@ h1 {
 }
 
 img {
-    width: 300px;
     border-radius: 15px;
     display: block;
+    width: 100%;
+    height: auto;
 }
 
 hr {
